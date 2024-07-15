@@ -4,7 +4,7 @@
 // - protoc             v5.27.2
 // source: helloworld.proto
 
-package grpc_try
+package protos
 
 import (
 	context "context"
