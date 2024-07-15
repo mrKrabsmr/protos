@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package helloworld;
+
+option go_package = "github.com/mrKrabsmr/grpc-try";
+
+service HelloWorld {
+     rpc SayHelloWorld(SayHelloWorldRequest) returns (SayHelloWorldResponse);
+}
+
+message SayHelloWorldRequest {
+     string for = 1;
+     string from = 2;
+}
+
+message SayHelloWorldResponse {
+     string answer = 1;
+}
